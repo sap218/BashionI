@@ -131,7 +131,7 @@ ggplot(df, aes(x=AgeGroup, fill=factor(Stars))) +
   scale_fill_brewer(palette="Set3", direction=1) + 
   labs(x=" ", y=" ", fill="Stars",
        title="Distribution of ratings by age groups") +
-  theme_minimal()
+  theme_minimal() + theme(legend.position="bottom")
 ggsave("plots/stars_bar.png")
 
 # ggplot(df, aes(x=Quantity, y=Stars)) +

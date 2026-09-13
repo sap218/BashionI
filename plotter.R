@@ -38,7 +38,7 @@ ggplot(monthly, aes(x=Month, group=1)) +
        title="Monthly costs and revenue") +
   theme_minimal() + theme(legend.position="bottom")
 
-ggsave("plots/costs_line.png")
+ggsave("plots/costs_line.png", width=4100,height=2350,units="px")
 rm(monthly)
 
 # Categories --------------------------------------------------------------
@@ -132,7 +132,7 @@ ggplot(df, aes(x=AgeGroup, fill=factor(Stars))) +
   labs(x=" ", y=" ", fill="Stars",
        title="Distribution of ratings by age groups") +
   theme_minimal() + theme(legend.position="bottom")
-ggsave("plots/stars_bar.png")
+ggsave("plots/stars_bar.png", width=4100,height=2350,units="px")
 
 # ggplot(df, aes(x=Quantity, y=Stars)) +
 #   geom_jitter(width=0.15, height=0.1, alpha=0.3, colour="#4C78A8") +
